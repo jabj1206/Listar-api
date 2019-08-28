@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '5.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '1.3.13'
+gem 'responders'
+gem 'actionpack'
   # Use SCSS for stylesheets      # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '~> 5.0'

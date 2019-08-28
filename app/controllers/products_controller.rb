@@ -1,7 +1,8 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.all
-  end
+    render json: @products
+    end
 
   def new
     @product = Product.new
@@ -19,8 +20,10 @@ class ProductsController < ApplicationController
     @product = Product.update(params[:id], product_params)
   end
 
+  
   private
-    def product_params
-      params.require(:product).permit(:name, :price)
-    end
+
+  def product_params
+    params.require(:product).permit(:name, :price)
+  end
 end
